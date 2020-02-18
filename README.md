@@ -77,5 +77,15 @@ One thing I learned a ton about through this project was tensorflow graphs. I wa
 
 Another huge thing was I got the chance to take a more hands on approach to my learning and actually implement something in order to solve a problem. I had taken University of Alberta's Reinforcement Learning Specialization on Coursera and this was a great opportunity to take everything I had learned about exploration versus exploitation, using two models in tandem in order to solve one problem, or implementing neural networks and play a game.
 
-# Key Issues
+# Issues  
 
+If I had more time to work on this project I would edit a couple of things that I thinkk would make the model perform better.
+
+The first thing is that I would implement a different method such as tile coding or state aggregation in order to give the neural networks an easier time of deciphering which states are very similar so that learning could be much much faster. Currently, there are a ton of different state action pairs and it is incredibly hard for both the actor and the critic to learn a good policy.
+
+The second thing I would try is implementing a different actor model, such as a gaussian method in order to better approximate the actions. With how many different states there are, another great point of generalization would be using a gaussian approximation method because it would help the actor reason that very similar actions result in very similar outputs, and that would be very helpful for learning a good policy.
+
+I think that the biggest problem arises in the sheer quantity of states and actions, so anything to combat that would help the model perform much better.
+
+
+### Overall, I learned a ton from this project and I am really glad I got the opportunity to do it.
