@@ -26,6 +26,9 @@ The model is made up of two parts, an actor and a critic.
 The actor takes in the state, and passes that through three hidden layers of a neural network to output the optimal action to take.
 
 The critic takes in both the state and the action, the state goes through two hidden layers before being concatenated with the action that goes through one hidden layers, after they are joined they go through one hidden layer before the neural network outputs the reward that should be given to that state-action pair.
+
+It is the actor's job to decide what action will maximize the reward given to it by the critic, and it is the critics job to model the rewards of the real world as best as it can.
+
 ## State
 
 The state is simply a flattened 8x8x3 representation of the coordinates of each block and orb on the screen, with the x-coordinate of the firing point and number of balls appended to the end.
@@ -65,10 +68,14 @@ Unfortunately, this wasn't able to defeat the game, but it was able to improve a
 
 ![alt text](Trained.png)
 
-Here is the trained version, it clearly has learnt a policy that regularly gets into the 40s, but it isn't an optimal one.
+Here is the trained version, it clearly has learnt a policy that is able to break into the 50s, but it isn't an optimal one.
 
 [![Alt text](https://img.youtube.com/vi/4X0AL9TKNoU/0.jpg)](https://www.youtube.com/watch?v=4X0AL9TKNoU)
 
 # Learning Points
+One thing I learned a ton about through this project was tensorflow graphs. I was forced to learn a lot about how tensorflow graphs are essentially processes that you can activate and use many different times. Initially I was recreating new tensorflow graphs every single time my code ran, so I had to put all of my graphs in the initialization of the actor critic network and just call the functions as I needed them to update the weights or get the output of a model.
+
+Another huge thing was I got the chance to take a more hands on approach to my learning and actually implement something in order to solve a problem. I had taken University of Alberta's Reinforcement Learning Specialization on Coursera and this was a great opportunity to take everything I had learned about exploration versus exploitation, using two models in tandem in order to solve one problem, or implementing neural networks and play a game.
 
 # Key Issues
+
