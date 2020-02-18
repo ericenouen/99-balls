@@ -1,4 +1,4 @@
-# 99-balls
+# 99 Balls
 An algorithm to beat the game 99 Balls using Actor Critic.
 ![alt text](Ballz.png)
 
