@@ -15,7 +15,10 @@ For example, if the x and previous x coordinates were both inside a block but th
 This didn't account for hitting corners, where both previous coordinates would be outside of the block, so I implemented a test that would change the direction of any ball that hit a corner to travel directly away from that corner.
 
 # Training the Model
+Now that I had my game, it was time to try and beat it. 
 
+Initially the model pretty much plays randomly according to its epsilon greedy policy.
+[![Alt text](https://img.youtube.com/vi/cZT-lTS1rxA/0.jpg)](https://www.youtube.com/watch?v=cZT-lTS1rxA)
 # Learning Points
 
 # Key Issues
