@@ -88,4 +88,4 @@ The second thing I would try is implementing a different actor model, such as a 
 I think that the biggest problem arises in the sheer quantity of states and actions, so anything to combat that would help the model perform much better.
 
 
-### Overall, I learned a ton from this project and I am really glad I got the opportunity to do it.
+### Overall, I learned a ton from this project and I am really glad I got the opportunity to work on it.
